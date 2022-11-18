@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import NewTodo from "./Components/NewTodo";
+// import TodoList from "./Components/TodoList";
+import NewTodo from "./components/NewTodo";
+import TodoList from "./components/TodoList";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="container">
+            <div style={{ marginTop: 40 }}>
+                <h1>Todo list</h1>
+                <div>
+                    <NewTodo />
+                </div>
+                <div>
+                    <TodoList />
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
